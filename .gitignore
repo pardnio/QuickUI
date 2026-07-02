@@ -18,3 +18,4 @@ terser.cache.json
 
 docker-compose.yml
 static/image/cover.png
+worker/

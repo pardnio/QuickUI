@@ -1,6 +1,6 @@
 {
     "name": "@pardnchiu/quickui",
-    "version": "0.6.17",
+    "version": "0.6.18",
     "description": "QuickUI is a lightweight frontend framework built on pure JavaScript and native APIs. Supports data binding, i18n support, event binding, conditional rendering, and loop rendering.",
     "main": "dist/QuickUI.js",
     "module": "dist/QuickUI.esm.js",
@@ -25,7 +25,7 @@
     ],
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/pardnchiu/QuickUI.git"
+        "url": "git+https://github.com/pardnio/QuickUI.git"
     },
     "keywords": [
         "javascript-library",
@@ -44,12 +44,12 @@
         "email": "dev@pardn.io",
         "url": "https://github.com/pardnchiu"
     },
-    "license": "Proprietary",
+    "license": "MIT",
     "bugs": {
-        "url": "https://github.com/pardnchiu/QuickUI/issues",
+        "url": "https://github.com/pardnio/QuickUI/issues",
         "email": "dev@pardn.io"
     },
-    "homepage": "https://github.com/pardnchiu/QuickUI#readme",
+    "homepage": "https://github.com/pardnio/QuickUI#readme",
     "devDependencies": {
         "chokidar-cli": "3.0.0",
         "terser": "5.31.3",

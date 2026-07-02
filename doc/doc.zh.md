@@ -30,7 +30,7 @@ import { QUI } from "@pardnchiu/quickui/dist/QuickUI.esm.js";
 ### 從原始碼建置
 
 ```bash
-git clone https://github.com/pardnchiu/QuickUI.git
+git clone https://github.com/pardnio/QuickUI.git
 cd QuickUI
 npm install
 npm run build:once
@@ -49,13 +49,13 @@ npm run build:once
 </div>
 
 <script>
-const app = new QUI({
-  id: "app",
-  data: {
-    title: "Hello QuickUI",
-    description: "一個輕量化前端框架"
-  }
-});
+  const app = new QUI({
+    id: "app",
+    data: {
+      title: "Hello QuickUI",
+      description: "一個輕量化前端框架",
+    },
+  });
 </script>
 ```
 
@@ -71,12 +71,12 @@ const app = new QUI({
 </div>
 
 <script>
-const app = new QUI({
-  id: "app",
-  data: {
-    status: "active"
-  }
-});
+  const app = new QUI({
+    id: "app",
+    data: {
+      status: "active",
+    },
+  });
 </script>
 ```
 
@@ -98,13 +98,13 @@ const app = new QUI({
 </div>
 
 <script>
-const app = new QUI({
-  id: "app",
-  data: {
-    items: ["項目 A", "項目 B", "項目 C"],
-    user: { name: "Pardn", role: "Developer" }
-  }
-});
+  const app = new QUI({
+    id: "app",
+    data: {
+      items: ["項目 A", "項目 B", "項目 C"],
+      user: { name: "Pardn", role: "Developer" },
+    },
+  });
 </script>
 ```
 
@@ -119,20 +119,20 @@ const app = new QUI({
 </div>
 
 <script>
-const app = new QUI({
-  id: "app",
-  data: {
-    message: ""
-  },
-  event: {
-    handleClick: (e) => {
-      console.log("clicked");
+  const app = new QUI({
+    id: "app",
+    data: {
+      message: "",
     },
-    handleInput: (e) => {
-      app.data.message = e.target.value;
-    }
-  }
-});
+    event: {
+      handleClick: (e) => {
+        console.log("clicked");
+      },
+      handleInput: (e) => {
+        app.data.message = e.target.value;
+      },
+    },
+  });
 </script>
 ```
 
@@ -147,12 +147,12 @@ const app = new QUI({
 </div>
 
 <script>
-const app = new QUI({
-  id: "app",
-  data: {
-    username: ""
-  }
-});
+  const app = new QUI({
+    id: "app",
+    data: {
+      username: "",
+    },
+  });
 </script>
 ```
 
@@ -167,21 +167,37 @@ const app = new QUI({
 </div>
 
 <script>
-const app = new QUI({
-  id: "app",
-  i18n: {
-    zh: { title: "歡迎" },
-    en: { title: "Welcome" }
-  },
-  i18nLang: "zh",
-  data: {},
-  event: {
-    switchLang: () => {
-      app.lang("en");
-    }
-  }
-});
+  const app = new QUI({
+    id: "app",
+    i18n: {
+      zh: { title: "歡迎" },
+      en: { title: "Welcome" },
+    },
+    i18nLang: "zh",
+    data: {},
+    event: {
+      switchLang: () => {
+        app.lang("en");
+      },
+    },
+  });
 </script>
+```
+
+### 插入區塊
+
+使用 `<temp :path="...">` 動態載入並插入外部 HTML 檔案：
+
+```html
+<temp :path="/components/header.html"></temp>
+```
+
+### 懶加載
+
+使用 `:lazyload` 延遲載入圖片，圖片進入視窗才會實際載入：
+
+```html
+<img :lazyload="imageUrl" />
 ```
 
 ### 生命週期
@@ -190,30 +206,30 @@ const app = new QUI({
 
 ```html
 <script>
-const app = new QUI({
-  id: "app",
-  data: {},
-  when: {
-    before_render: () => {
-      console.log("渲染前");
+  const app = new QUI({
+    id: "app",
+    data: {},
+    when: {
+      beforeRender: () => {
+        console.log("渲染前");
+      },
+      rendered: () => {
+        console.log("渲染完成");
+      },
+      beforeUpdate: () => {
+        console.log("更新前");
+      },
+      updated: () => {
+        console.log("更新完成");
+      },
+      beforeDestroy: () => {
+        console.log("銷毀前");
+      },
+      destroyed: () => {
+        console.log("已銷毀");
+      },
     },
-    rendered: () => {
-      console.log("渲染完成");
-    },
-    before_update: () => {
-      console.log("更新前");
-    },
-    updated: () => {
-      console.log("更新完成");
-    },
-    before_destroy: () => {
-      console.log("銷毀前");
-    },
-    destroyed: () => {
-      console.log("已銷毀");
-    }
-  }
-});
+  });
 </script>
 ```
 
@@ -235,11 +251,11 @@ new QUI(options: {
     lazyload?: boolean;
   };
   when?: {
-    before_render?: () => void;
+    beforeRender?: () => void;
     rendered?: () => void;
-    before_update?: () => void;
+    beforeUpdate?: () => void;
     updated?: () => void;
-    before_destroy?: () => void;
+    beforeDestroy?: () => void;
     destroyed?: () => void;
   };
 })
@@ -258,6 +274,7 @@ new QUI(options: {
 | `once` | `boolean` | 否 | 設為 `true` 時資料不建立 Proxy（靜態渲染） |
 | `option.svg` | `boolean` | 否 | 啟用 SVG 監聽器，預設 `true` |
 | `option.lazyload` | `boolean` | 否 | 啟用圖片延遲載入，預設 `true` |
+| `when` | `object` | 否 | 生命週期鉤子集合 |
 
 ### 實例方法
 
@@ -271,16 +288,17 @@ new QUI(options: {
 | 語法 | 說明 | 範例 |
 |------|------|------|
 | `{{ value }}` | 文字插值 | `{{ title }}` |
+| `:html` | 原始 HTML 插入 | `:html="content"` |
 | `:for` | 迴圈渲染 | `item in items`、`(key, value) in obj` |
 | `:if` | 條件渲染 | `:if="show"`、`:if="count > 0"` |
 | `:else-if` / `:elif` | 條件分支 | `:else-if="status == pending"` |
 | `:else` | 預設分支 | `:else` |
-| `:html` | HTML 內容綁定 | `:html="content"` |
 | `:model` | 雙向資料綁定 | `:model="username"` |
 | `:path` | 載入外部 HTML | `:path="/components/header.html"` |
 | `:lazyload` | 圖片延遲載入 | `:lazyload="image_url"` |
 | `:hide` | 條件隱藏 | `:hide="isHidden"` |
-| `@click` | 事件綁定 | `@click="handleClick"` |
+| `:[CSS 屬性]` | 直接綁定樣式屬性 | `:background-color="color"` |
+| `@event` / `qe-event` | 事件綁定 | `@click="handleClick"` |
 | `:src` | 動態來源 | `:src="imageUrl"` |
 | `:href` | 動態連結 | `:href="linkUrl"` |
 
@@ -289,10 +307,10 @@ new QUI(options: {
 | 函式 | 語法 | 說明 |
 |------|------|------|
 | `LENGTH()` | `{{ LENGTH(items) }}` | 取得陣列或物件的長度 |
-| `CALC()` | `{{ CALC(price * 1.05) }}` | 數值計算 |
+| `CALC()` | `{{ CALC(price * 1.05) }}` | 支援 `+`、`-`、`*`、`/`、`%` 的數值運算 |
 | `UPPER()` | `{{ UPPER(name) }}` | 轉大寫 |
 | `LOWER()` | `{{ LOWER(name) }}` | 轉小寫 |
-| `DATE()` | `{{ DATE(timestamp, YYYY-MM-DD) }}` | 日期格式化 |
+| `DATE()` | `{{ DATE(timestamp, YYYY-MM-DD) }}` | 依格式字串將 UNIX 時間戳記格式化 |
 
 ### 比較運算子
 
@@ -316,4 +334,4 @@ new QUI(options: {
 
 ***
 
-©️ 2024 [邱敬幃 Pardn Chiu](https://linkedin.com/in/pardnchiu)
+©️ 2024 [邱敬幃 Pardn Chiu](https://www.linkedin.com/in/pardnchiu)
