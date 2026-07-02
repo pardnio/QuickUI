@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /page/test.html
+Disallow: /static/path/
+
+Sitemap: https://quickui.pardn.io/sitemap.xml

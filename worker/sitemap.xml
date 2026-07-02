@@ -3,147 +3,165 @@
         xmlns:xhtml="http://www.w3.org/1999/xhtml">
     <url>
         <loc>https://quickui.pardn.io/</loc>
-        <lastmod>2024-12-20</lastmod>
+        <lastmod>2026-07-02</lastmod>
         <changefreq>daily</changefreq>
         <priority>1.0</priority>
         <xhtml:link rel="alternate" hreflang="zh" href="https://quickui.pardn.io/index.html?lang=zh"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://quickui.pardn.io/index.html?lang=en"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://quickui.pardn.io/"/>
     </url>
     <url>
         <loc>https://quickui.pardn.io/page/doc.html</loc>
-        <lastmod>2024-12-20</lastmod>
+        <lastmod>2026-07-02</lastmod>
         <changefreq>daily</changefreq>
         <priority>1.0</priority>
         <xhtml:link rel="alternate" hreflang="zh" href="https://quickui.pardn.io/page/doc.html?lang=zh"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://quickui.pardn.io/page/doc.html?lang=en"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://quickui.pardn.io/page/doc.html"/>
     </url>
     <url>
         <loc>https://quickui.pardn.io/page/doc.html?tag=installation</loc>
-        <lastmod>2024-12-20</lastmod>
+        <lastmod>2026-07-02</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.8</priority>
         <xhtml:link rel="alternate" hreflang="zh" href="https://quickui.pardn.io/page/doc.html?lang=zh&amp;tag=installation"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://quickui.pardn.io/page/doc.html?lang=en&amp;tag=installation"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://quickui.pardn.io/page/doc.html?tag=installation"/>
     </url>
     <url>
         <loc>https://quickui.pardn.io/page/doc.html?tag=overview</loc>
-        <lastmod>2024-12-20</lastmod>
+        <lastmod>2026-07-02</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.8</priority>
         <xhtml:link rel="alternate" hreflang="zh" href="https://quickui.pardn.io/page/doc.html?lang=zh&amp;tag=overview"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://quickui.pardn.io/page/doc.html?lang=en&amp;tag=overview"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://quickui.pardn.io/page/doc.html?tag=overview"/>
     </url>
     <url>
         <loc>https://quickui.pardn.io/page/doc.html?tag=text</loc>
-        <lastmod>2024-12-20</lastmod>
+        <lastmod>2026-07-02</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.8</priority>
         <xhtml:link rel="alternate" hreflang="zh" href="https://quickui.pardn.io/page/doc.html?lang=zh&amp;tag=text"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://quickui.pardn.io/page/doc.html?lang=en&amp;tag=text"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://quickui.pardn.io/page/doc.html?tag=text"/>
     </url>
     <url>
         <loc>https://quickui.pardn.io/page/doc.html?tag=block</loc>
-        <lastmod>2024-12-20</lastmod>
+        <lastmod>2026-07-02</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.8</priority>
         <xhtml:link rel="alternate" hreflang="zh" href="https://quickui.pardn.io/page/doc.html?lang=zh&amp;tag=block"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://quickui.pardn.io/page/doc.html?lang=en&amp;tag=block"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://quickui.pardn.io/page/doc.html?tag=block"/>
     </url>
     <url>
         <loc>https://quickui.pardn.io/page/doc.html?tag=forloop</loc>
-        <lastmod>2024-12-20</lastmod>
+        <lastmod>2026-07-02</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.8</priority>
         <xhtml:link rel="alternate" hreflang="zh" href="https://quickui.pardn.io/page/doc.html?lang=zh&amp;tag=forloop"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://quickui.pardn.io/page/doc.html?lang=en&amp;tag=forloop"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://quickui.pardn.io/page/doc.html?tag=forloop"/>
     </url>
     <url>
         <loc>https://quickui.pardn.io/page/doc.html?tag=ifelse</loc>
-        <lastmod>2024-12-20</lastmod>
+        <lastmod>2026-07-02</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.8</priority>
         <xhtml:link rel="alternate" hreflang="zh" href="https://quickui.pardn.io/page/doc.html?lang=zh&amp;tag=ifelse"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://quickui.pardn.io/page/doc.html?lang=en&amp;tag=ifelse"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://quickui.pardn.io/page/doc.html?tag=ifelse"/>
     </url>
     <url>
         <loc>https://quickui.pardn.io/page/doc.html?tag=model</loc>
-        <lastmod>2024-12-20</lastmod>
+        <lastmod>2026-07-02</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.8</priority>
         <xhtml:link rel="alternate" hreflang="zh" href="https://quickui.pardn.io/page/doc.html?lang=zh&amp;tag=model"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://quickui.pardn.io/page/doc.html?lang=en&amp;tag=model"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://quickui.pardn.io/page/doc.html?tag=model"/>
     </url>
     <url>
         <loc>https://quickui.pardn.io/page/doc.html?tag=binding</loc>
-        <lastmod>2024-12-20</lastmod>
+        <lastmod>2026-07-02</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.8</priority>
         <xhtml:link rel="alternate" hreflang="zh" href="https://quickui.pardn.io/page/doc.html?lang=zh&amp;tag=binding"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://quickui.pardn.io/page/doc.html?lang=en&amp;tag=binding"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://quickui.pardn.io/page/doc.html?tag=binding"/>
     </url>
     <url>
         <loc>https://quickui.pardn.io/page/doc.html?tag=event</loc>
-        <lastmod>2024-12-20</lastmod>
+        <lastmod>2026-07-02</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.8</priority>
         <xhtml:link rel="alternate" hreflang="zh" href="https://quickui.pardn.io/page/doc.html?lang=zh&amp;tag=event"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://quickui.pardn.io/page/doc.html?lang=en&amp;tag=event"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://quickui.pardn.io/page/doc.html?tag=event"/>
     </url>
     <url>
         <loc>https://quickui.pardn.io/page/doc.html?tag=css</loc>
-        <lastmod>2024-12-20</lastmod>
+        <lastmod>2026-07-02</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.8</priority>
         <xhtml:link rel="alternate" hreflang="zh" href="https://quickui.pardn.io/page/doc.html?lang=zh&amp;tag=css"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://quickui.pardn.io/page/doc.html?lang=en&amp;tag=css"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://quickui.pardn.io/page/doc.html?tag=css"/>
     </url>
     <url>
         <loc>https://quickui.pardn.io/page/doc.html?tag=function</loc>
-        <lastmod>2024-12-20</lastmod>
+        <lastmod>2026-07-02</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.8</priority>
         <xhtml:link rel="alternate" hreflang="zh" href="https://quickui.pardn.io/page/doc.html?lang=zh&amp;tag=function"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://quickui.pardn.io/page/doc.html?lang=en&amp;tag=function"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://quickui.pardn.io/page/doc.html?tag=function"/>
     </url>
 
     <url>
         <loc>https://quickui.pardn.io/page/doc.html?tag=lazyload</loc>
-        <lastmod>2024-12-20</lastmod>
+        <lastmod>2026-07-02</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.8</priority>
         <xhtml:link rel="alternate" hreflang="zh" href="https://quickui.pardn.io/page/doc.html?lang=zh&amp;tag=lazyload"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://quickui.pardn.io/page/doc.html?lang=en&amp;tag=lazyload"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://quickui.pardn.io/page/doc.html?tag=lazyload"/>
     </url>
     <url>
         <loc>https://quickui.pardn.io/page/doc.html?tag=i18n</loc>
-        <lastmod>2024-12-20</lastmod>
+        <lastmod>2026-07-02</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.8</priority>
         <xhtml:link rel="alternate" hreflang="zh" href="https://quickui.pardn.io/page/doc.html?lang=zh&amp;tag=i18n"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://quickui.pardn.io/page/doc.html?lang=en&amp;tag=i18n"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://quickui.pardn.io/page/doc.html?tag=i18n"/>
     </url>
     <url>
         <loc>https://quickui.pardn.io/page/doc.html?tag=lifecircle</loc>
-        <lastmod>2024-12-20</lastmod>
+        <lastmod>2026-07-02</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.8</priority>
         <xhtml:link rel="alternate" hreflang="zh" href="https://quickui.pardn.io/page/doc.html?lang=zh&amp;tag=lifecircle"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://quickui.pardn.io/page/doc.html?lang=en&amp;tag=lifecircle"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://quickui.pardn.io/page/doc.html?tag=lifecircle"/>
     </url>
     <url>
         <loc>https://quickui.pardn.io/page/doc.html?tag=data</loc>
-        <lastmod>2024-12-20</lastmod>
+        <lastmod>2026-07-02</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.8</priority>
         <xhtml:link rel="alternate" hreflang="zh" href="https://quickui.pardn.io/page/doc.html?lang=zh&amp;tag=data"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://quickui.pardn.io/page/doc.html?lang=en&amp;tag=data"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://quickui.pardn.io/page/doc.html?tag=data"/>
     </url>
     <url>
         <loc>https://quickui.pardn.io/page/doc.html?tag=DEPRECATION</loc>
-        <lastmod>2024-12-20</lastmod>
+        <lastmod>2026-07-02</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.8</priority>
         <xhtml:link rel="alternate" hreflang="zh" href="https://quickui.pardn.io/page/doc.html?lang=zh&amp;tag=DEPRECATION"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://quickui.pardn.io/page/doc.html?lang=en&amp;tag=DEPRECATION"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://quickui.pardn.io/page/doc.html?tag=DEPRECATION"/>
     </url>
 </urlset>
