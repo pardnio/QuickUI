@@ -5,7 +5,7 @@
 
 <p align="center">
 <picture>
-<img src="./static/image/logo.svg" alt="QuickUI" width="96">
+<img src="https://quickui.pardn.io/static/image/logo.svg" alt="QuickUI" width="96">
 </picture>
 </p>
 
