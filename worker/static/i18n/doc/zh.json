@@ -1,0 +1,18 @@
+{
+    "installation": "安裝與使用",
+    "overview": "屬性概覽",
+    "text": "文字替換",
+    "block": "插入區塊",
+    "forloop": "迴圈渲染",
+    "ifelse": "條件渲染",
+    "model": "模板渲染",
+    "binding": "雙向綁定",
+    "event": "事件偵測",
+    "css": "CSS設置",
+    "function": "可用函式",
+    "lazyload": "懶加載",
+    "i18n": "多國語言",
+    "lifecircle": "生命週期",
+    "data": "資料獲取",
+    "DEPRECATION": "即將棄用"
+}

@@ -1,0 +1,18 @@
+{
+    "installation": "Install and Use",
+    "overview": "Overview",
+    "text": "Text",
+    "block": "Insert",
+    "forloop": "Loop",
+    "ifelse": "Conditional",
+    "model": "Template",
+    "binding": "Binding",
+    "event": "Event",
+    "css": "CSS",
+    "function": "Functions",
+    "lazyload": "LazyLoad",
+    "i18n": "i18n",
+    "lifecircle": "Lifecycle",
+    "data": "Data",
+    "DEPRECATION": "Deprecated"
+}

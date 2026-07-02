@@ -1,0 +1,116 @@
+
+*[\:effect="fade-in"],
+*[effect="fade-in"] {
+    opacity: 0;
+    transition: opacity 0.3s ease-in 0s;
+}
+
+*[\:effect="fade-in"].show,
+*[effect="fade-in"].show {
+    opacity: 1;
+}
+
+*[\:effect="expand"],
+*[effect="expand"] {
+    min-height: 0;
+    height: 0;
+    overflow: hidden;
+    transition: min-height 0.3s ease-in 0s;
+}
+
+*[\:effect="expand"].show,
+*[effect="expand"].show {
+    opacity: 1;
+}
+
+*[\:animation="fade-in"],
+*[animation="fade-in"] {
+    opacity: 0;
+    transition: opacity 0.3s ease-in 0s;
+}
+
+*[\:animation="fade-in"].show,
+*[animation="fade-in"].show {
+    opacity: 1;
+}
+
+*[\:animation="expand"],
+*[animation="expand"] {
+    min-height: 0;
+    height: 0;
+    overflow: hidden;
+    transition: min-height 0.3s ease-in 0s;
+}
+
+*[\:animation="expand"].show,
+*[animation="expand"].show {
+    opacity: 1;
+}
+
+*[\:mask="true"],
+*[mask="true"],
+*[\:mask="1"],
+*[mask="1"] {
+    position: relative;
+}
+
+*[\:mask="true"]::after,
+*[mask="true"]::after,
+*[\:mask="1"]::after,
+*[mask="1"]::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(90deg, #e0e0e0 15%, #f0f0f0, #e0e0e0 85%);
+    /* 使用灰色漸層 */
+    background-size: 200% 100%;
+    /* 背景尺寸兩倍寬度 */
+    animation: shimmer 1.5s infinite;
+    /* 來回移動動畫 */
+    z-index: 10;
+    transition: 0.3s;
+}
+
+*[\:mask="true"]::after,
+*[mask="true"]::after,
+*[\:mask="1"].show::after,
+*[mask="1"].show::after {
+    opacity: 0;
+}
+
+img[lazyload]:not([lazyload=""])[effect="circle"] {
+    animation: spin 2s ease-in-out infinite;
+    width: 1.25rem !important;
+    height: 1.25rem !important;
+}
+
+img[lazyload]:not([lazyload=""]):not([effect="circle"]) {
+    min-width: 1.25rem !important;
+    min-height: 1.25rem !important;
+    border-radius: 0.625rem !important;
+    background: linear-gradient(90deg, #e0e0e0 15%, #f0f0f0, #e0e0e0 85%);
+    background-size: 200% 100%;
+    animation: shimmer 1.5s infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes shimmer {
+    0% {
+        background-position: 200% 0;
+    }
+    100% {
+        background-position: -200% 0;
+    }
+}

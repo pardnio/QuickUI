@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="zh-Hans-TW">
+
+  <head>
+    <!-- 基本設定 -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="robots" content="index, follow">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, viewport-fit=cover">
+    <meta name="theme-color" content="#000000">
+
+    <!-- 網頁標題與描述 -->
+    <title>QuickUI 輕量化前端框架</title>
+    <meta name="description" content="(JavaScript Lib) QuickUI contains a lightweight front-end framework designed to separate the front-end user interface and data logic. 邱敬幃 Pardn Chiu.">
+
+    <!-- Open Graph 資訊 -->
+    <meta property="og:title" content=">QuickUI 輕量化前端框架">
+    <meta property="og:description" content="(JavaScript Lib) QuickUI contains a lightweight front-end framework designed to separate the front-end user interface and data logic. 邱敬幃 Pardn Chiu.">
+    <meta property="og:image" content="https://opengraph.githubassets.com/1/pardnio/QuickUI">
+    <meta property="og:url" content="https://pardnchiu.github.io/QuickUI">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="QuickUI 輕量化前端框架">
+
+    <!-- Twitter 卡片資訊 -->
+    <meta property="twitter:title" content=">QuickUI 輕量化前端框架">
+    <meta property="twitter:description" content="(JavaScript Lib) QuickUI contains a lightweight front-end framework designed to separate the front-end user interface and data logic. 邱敬幃 Pardn Chiu.">
+    <meta property="twitter:image" content="https://opengraph.githubassets.com/1/pardnio/QuickUI">
+    <meta property="twitter:image:alt" content="QuickUI 輕量化前端框架">
+    <meta property="twitter:url" content="https://pardnchiu.github.io/QuickUI">
+    <meta property="twitter:site" content="@pardnchiu">
+    <meta property="twitter:card" content="summary_large_image">
+
+    <!-- Mobile App 設定 -->
+    <meta name="mobile-web-app-capable" content="no">
+    <meta name="apple-mobile-web-app-capable" content="no">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+
+    <!-- 網站圖標 -->
+    <link rel="apple-touch-icon" href="">
+    <link rel="apple-touch-icon-precomposed" href="">
+    <link rel="icon" href="" type="image/x-icon">
+
+    <!-- 驗證標籤 -->
+    <meta name="google-site-verification" content="YQQ2f6AchR8dcb55Az2BYd_mw4TrP0J1RApD-v2v65Y" />
+
+    <!-- 樣式與字型 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap" as="style">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+
+    <!-- 資源預載: https://cdn.jsdelivr.net -->
+    <link rel="preconnect" href="https://cdn.jsdelivr.net">
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/@pardnchiu/quickui@latest/dist/QuickUI.js" as="script">
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/@pardnchiu/nanomd@latest/dist/NanoMD.js" as="script">
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/pdrenderkit@latest/dist/PDRenderKit.js" as="script">
+    <!-- <script src="/dist/QuickUI.js" copyright="Pardn Ltd"></script> -->
+    <!-- <script src="/src/QuickUI.js" copyright="Pardn Ltd"></script> -->
+
+    <!-- 資源預載: https://pardnchiu.github.io -->
+    <!-- <link rel="preconnect" href="https://pardnchiu.github.io"> -->
+    <!-- <link rel="preload" href="https://pardnchiu.github.io/css/index.css" as="style"> -->
+    <!-- <link rel="stylesheet" href="https://pardnchiu.github.io/css/index.css"> -->
+
+    <!-- 本地資源 -->
+    <!-- <script type="module" src="/static/js/index.js"></script> -->
+    <script src="/src/QuickUI.debug.js"></script>
+  </head>
+
+  <body id="app">
+    <p @click="click">i18n</p>
+    <p :test="i18n.greeting">{{ i18n.greeting }}, {{ i18n.user }}: {{ username }}</p>
+    <section :html="html"></section>
+    <strong :html="延遲載入過渡"></strong>
+    <hr>
+    <img :lazyload="https://picsum.photos/id/1/640/480" alt="" @click="click">
+    <hr>
+    <section id="test" :animation="expand"></section>
+    <h1 :id="title" :if="heading == 1">{{ title }} 1
+      {{ string }} {{ CALC(num * 10) }} {{ DATE(now, YYYY-MM-DD hh:mm:ss) }}</h1>
+    <h2 :else-if="isH2">{{ title }} 2
+      {{ string }} {{ CALC(num * 10) }} {{ DATE(now, YYYY-MM-DD hh:mm:ss) }}</h2>
+    <h3 :else-if="heading == 3">{{ title }} 3
+      {{ string }} {{ CALC(num * 10) }} {{ DATE(now, YYYY-MM-DD hh:mm:ss) }}</h3>
+    <h4 :else>{{ title }} 4
+      {{ string }} {{ CALC(num * 10) }} {{ DATE(now, YYYY-MM-DD hh:mm:ss) }}</h4>
+    <br>
+    <!-- <p :html="html" :bg-color="#000" :color="#ff0000">adfasdf</p> -->
+    <!-- <input type="text" :model="title"> -->
+    <!-- <temp :path="/static/path/test.html"></temp>
+        <temp :path="/static/path/test2.html"></temp> -->
+    <strong>以下是SVG轉換</strong>
+    <hr>
+    <temp-svg :src="/static/image/404.svg"></temp-svg>
+    <hr>
+    <ul>
+      <li :for="(key, val) in obj">
+        <p @click="val.click">{{ key }}: {{ val.name }}</p>
+        {{ string }} {{ CALC(num * 10) }} {{ DATE(now, YYYY-MM-DD hh:mm:ss) }}
+        <ul>
+          <li :for="item in val.ary">
+            {{ item.name }}
+            {{ string }} {{ CALC(num * 10) }} {{ DATE(now, YYYY-MM-DD hh:mm:ss) }}
+            <ul>
+              <li :for="(item1, index1) in item.ary1">
+                {{ CALC(index1 + 1) }}. {{ item1.name }} - ${{ item1.price }}
+                {{ string }} {{ CALC(num * 10) }} {{ DATE(now, YYYY-MM-DD hh:mm:ss) }}
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+    <ul>
+      <li :for="(item, index) in ary" :id="item" :index="index">{{ item }} {{ CALC(index + 1) }}
+        {{ string }} {{ CALC(num * 10) }} {{ DATE(now, YYYY-MM-DD hh:mm:ss) }}</li>
+      {{ string }} {{ CALC(num * 10) }} {{ DATE(now, YYYY-MM-DD hh:mm:ss) }}
+    </ul>
+    <img :lazyload="src" alt="">
+    <p @click="click">Total: {{ LENGTH(array) }}</p>
+    <p>calc: {{ CALC(num * 10) }}</p>
+    <p>{{ UPPER(test1) }} {{ LOWER(test2) }}</p>
+    <p>{{ DATE(now, YYYY-MM-DD hh:mm:ss) }}</p>
+    <hr>
+    <!-- <img :for="e in icons" :lazyload="https://skillicons.dev/icons?i={{e}}"> -->
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        let icons = "ableton,activitypub,actix,adonis,ae,aiscript,alpinejs,anaconda,androidstudio,angular,ansible,apollo,apple,appwrite,arch,arduino,astro,atom,au,autocad,aws,azul,azure,babel,bash,bevy,bitbucket,blender,bootstrap,bsd,bun,c,cs,cpp,crystal,cassandra,clion,clojure,cloudflare,cmake,codepen,coffeescript,css,cypress,d3,dart,debian,deno,devto,discord,bots,discordjs,django,docker,dotnet,dynamodb,eclipse,elasticsearch,electron,elixir,elysia,emacs,ember,emotion,express,fastapi,fediverse,figma,firebase,flask,flutter,forth,fortran,gamemakerstudio,gatsby,gcp,git,github,githubactions,gitlab,gmail,gherkin,go,gradle,godot,grafana,graphql,gtk,gulp,haskell,haxe,haxeflixel,heroku,hibernate,html,htmx,idea,ai,instagram,ipfs,java,js,jenkins,jest,jquery,kafka,kali,kotlin,ktor,kubernetes,laravel,latex,less,linkedin,linux,lit,lua,md,mastodon,materialui,matlab,maven,mint,misskey,mongodb,mysql,neovim,nestjs,netlify,nextjs,nginx,nim,nix,nodejs,notion,npm,nuxtjs,obsidian,ocaml,octave,opencv,openshift,openstack,p5js,perl,ps,php,phpstorm,pinia,pkl,plan9,planetscale,pnpm,postgres,postman,powershell,pr,prisma,processing,prometheus,pug,pycharm,py,pytorch,qt,r,rabbitmq,rails,raspberrypi,react,reactivex,redhat,redis,redux,regex,remix,replit,rider,robloxstudio,rocket,rollupjs,ros,ruby,rust,sass,spring,sqlite,stackoverflow,styledcomponents,sublime,supabase,scala,sklearn,selenium,sentry,sequelize,sketchup,solidity,solidjs,svelte,svg,swift,symfony,tailwind,tauri,tensorflow,terraform,threejs,twitter,ts,ubuntu,unity,unreal,v,vala,vercel,vim,visualstudio,vite,vitest,vscode,vscodium,vue,vuetify,wasm,webflow,webpack,webstorm,windicss,windows,wordpress,workers,xd,yarn,yew,zig".split(",");
+
+        const test = new QUI({
+          id: "test",
+          data: {
+            test1: "模板渲染測試1",
+            test2: "模板渲染測試2",
+            test3: "模板渲染測試3",
+          },
+          event: {
+            test: e => {
+              alert("test");
+            }
+          },
+          render: _ => `
+                    section
+                    "{{ test1 }}"
+                    div#main-card.primary.highlighted (q-title: "test1" 
+                        q-content: "12312312"
+                        qe-click: "test"
+                        style: "background: red;"
+                    ) ["{{ test2 }}"
+                        "<br>"
+                        "{{ test3 }}"
+                    ]`
+        })
+
+        const app = new QUI({
+          id: "app",
+          i18n: {
+            zh: "/static/zh.json",
+            en: {
+              greeting: "Hello",
+              user: "User"
+            }
+          },
+          i18nLang: "en",
+          data: {
+            icons: icons,
+            username: "帕登",
+            test: {
+              name: "34567"
+            },
+            left: {
+              is_database_list: 1
+            },
+            heading: 1,
+            isH2: null,
+            html: "<a href='https://pardn.io/blog/nodejs-install' target='_blank'>nodejs-install</a>",
+            title: "test",
+            ary: ["test1", "test2", "test3"],
+            array: [1, 2, 3, 4],
+            num: 1,
+            test1: "upper",
+            test2: "LOWER",
+            now: Math.floor(Date.now() / 1000),
+            string: "test",
+            src: "https://img.shields.io/badge/read-English%20Version-ffffff",
+            obj: {
+              home: {
+                name: 'Home',
+                click: "click1",
+                ary: [
+                  {
+                    name: 'Furniture',
+                    ary1: [
+                      { name: 'Sofa', price: 300 },
+                      { name: 'Table', price: 150 }
+                    ]
+                  },
+                  {
+                    name: 'Decorations',
+                    ary1: [
+                      { name: 'Picture Frame', price: 20 },
+                      { name: 'Vase', price: 15 }
+                    ]
+                  }
+                ]
+              },
+              food: {
+                name: "Food",
+                click: "click2",
+                ary: [
+                  {
+                    name: 'Snacks',
+                    ary1: [
+                      { name: 'Potato Chips', price: 10 },
+                      { name: 'Chocolate', price: 8 }
+                    ]
+                  },
+                  {
+                    name: 'Beverages',
+                    ary1: [
+                      { name: 'Juice', price: 5 },
+                      { name: 'Tea', price: 3 }
+                    ]
+                  }
+                ]
+              },
+            }
+          },
+          event: {
+            click: _ => {
+              alert("good");
+            },
+            click1: _ => {
+              alert("good1");
+            },
+            click2: _ => {
+              alert("good2");
+            },
+            input: _ => {
+              // console.log(app.data)
+            }
+          },
+          when: {
+            beforeRender: _ => {
+              // console.log("準備渲染");
+              // return false;
+            },
+            rendered: sec => {
+              // const html = app.parseToHTML(`
+              // div#main-card.primary.highlighted { 
+              //     style: "background: red;", 
+              //     children: [ 
+              //         "test",
+              //         header.title { 
+              //             data-role: "title" 
+              //         }, 
+              //         section.content { 
+              //             style: "padding: 20px;" 
+              //         } 
+              //     ]
+              // },
+              // "test"`);
+              // console.log(html)
+              setTimeout(_ => {
+
+                app.data.heading = 3
+                app.lang("zh")
+              }, 1000)
+              setTimeout(_ => {
+
+                app.data.isH2 = true
+                app.data.obj.home.ary[0].name = "Test"
+
+              }, 2000)
+              // console.log("已渲染", sec)
+            },
+            beforeUpdate: _ => {
+              // console.log("準備更新")
+              // alert(true)
+              // return false;
+            },
+            updated: sec => {
+              // console.log("已更新", sec)
+            }
+          }
+        });
+
+      });
+    </script>
+  </body>
+
+</html>
