@@ -310,12 +310,12 @@ class vDOM {
         }
       })();
 
-      if (!isFit && !hasElse) {
-        vdom[_children][_splice](index, ary.length);
-      } else if (isFit) {
-        index += ary.length - 2;
-      } else {
-        index++;
+      if (!isFit) {
+        if (hasElse) {
+          index++;
+        } else {
+          vdom[_children][_splice](index, ary.length);
+        }
       }
     }
 

@@ -394,11 +394,13 @@ class QUI {
     const newElement =
       typeof patch[_vdom] === "string" ? $document[_createTextNode](patch[_vdom]) : this.#createElement(patch[_vdom]);
 
+    const nodeNext = removeEmptyTextNode(targetNode as Element)[append_index];
+
     // * 將新元素插入到正確的位置
-    if (append_index + 1 > (targetNode as Element)[_children][_length]) {
+    if (nodeNext == null) {
       targetNode[_appendChild](newElement);
     } else {
-      targetNode.insertBefore(newElement, (targetNode as Element)[_children][append_index + 1]);
+      targetNode.insertBefore(newElement, nodeNext);
     }
 
     if (typeof patch[_vdom] === "string") {
@@ -407,11 +409,11 @@ class QUI {
 
     // * 設置新元素的屬性
     for (const [key, value] of $Object.entries(patch[_vdom][_props])) {
-      this.#patchProp((targetNode as Element).childNodes[append_index] as Element, key, value || "", patch[_vdom]);
+      this.#patchProp(newElement as Element, key, value || "", patch[_vdom]);
     }
 
     // * 更新子元素
-    this.#appendChild(patch[_vdom], (targetNode as Element)[_children][append_index]);
+    this.#appendChild(patch[_vdom], newElement as Element);
   }
 
   // * 依據 `props` 屬性渲染 attributes
