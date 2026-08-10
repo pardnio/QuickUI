@@ -2,6 +2,7 @@
 > 功能不變，名稱更加精簡好記。
 
 ## 從 npm 安裝
+
 ```bash
 npm i @pardnchiu/quickui
 ```
@@ -42,10 +43,10 @@ const app = new QUI({
         // 自訂 EVENT
     },
     when: {
-        before_mount: function () {
+        before_render: function () {
             // 停止渲染
         },
-        mounted: function () {
+        rendered: function () {
             // 已渲染
         },
         before_update: function () {
