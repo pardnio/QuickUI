@@ -1,5 +1,6 @@
 interface Window {
   QUI: any;
+  _: any;
 }
 
 type Patch =

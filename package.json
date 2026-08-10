@@ -1,6 +1,6 @@
 {
   "name": "@pardnchiu/quickui",
-  "version": "0.6.19",
+  "version": "0.6.20",
   "description": "QuickUI is a lightweight frontend framework built on pure JavaScript and native APIs. Supports data binding, i18n support, event binding, conditional rendering, and loop rendering.",
   "main": "dist/QuickUI.js",
   "module": "dist/QuickUI.esm.js",

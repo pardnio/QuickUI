@@ -104,3 +104,5 @@ function createElement(tag = "", val0?: any, val1?: any) {
 
   return dom;
 }
+
+window._ = createElement;
